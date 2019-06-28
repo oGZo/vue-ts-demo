@@ -1,4 +1,4 @@
-## vue typescript 的三种写法
+## vue typescript 的两种写法
 
 ### 第一种  Vue.extend
 #### 特点
@@ -11,7 +11,7 @@
 3. 单纯js对象无法正常按 vue框架的逻辑推断
 4. 通过 vuex 注入的方法和字段 无法进行类型推断和校验
 
-### 第二种   vue-class-component
+### 第二种   vue-class-component  结合 vue-property-component
 
 ```
 import Vue from 'vue'
@@ -130,5 +130,3 @@ export default class App extends AppProps {
 4. watch filter 等 的funtion中  编辑器无法提示该组件自有的方法和属性, 开发便利性下降;
 
 
-
-### 第三种
